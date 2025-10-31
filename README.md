@@ -1,6 +1,13 @@
 # MailHog docker-compose env 
-- with local storage
-- web ui on port 8025 with login "test"  and password "test" 
+
+This is how to install Mailhog on linux server
+
+## Prerequisites
+- Docker should be instaled
+- Docker service should start when server start
+
+## Ports
+- web ui on port 8025 with login and password that we have set 
 - smtp on port 2025 with login="" and password=""
 
 ## Change login and password
@@ -11,3 +18,7 @@
   - mailhog - name of docker container mailhog
 
  `cat mailhog.auth`
+
+To create container
+ `docker-compose up -d`
+
